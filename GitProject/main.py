@@ -14,3 +14,6 @@ for student in lista2:
 '''
 
 ModifyStudents.add_student(lista)
+
+for student in lista:
+    print(student.get("Name"), student.get("Surname"), student.get("ID"))

@@ -1,16 +1,16 @@
-# This is a sample Python script.
+from importStudents import ImportStudents
+from addStudent import ModifyStudents
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+lista = ImportStudents.csv("lists/student_list.csv")
+'''
+for student in lista:
+    print(student.get("Name"), student.get("Surname"), student.get("ID"))
 
+'''
+lista2 = ImportStudents.txt("lists/student_list.txt")
+'''
+for student in lista2:
+    print(student.get("Name"), student.get("Surname"), student.get("ID"))
+'''
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+ModifyStudents.add_student(lista)

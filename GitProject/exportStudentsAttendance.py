@@ -5,7 +5,7 @@ class ExportStudentsAttendance:
     def csv(path, list):
         student_details_structure = ExportStudentsAttendance.student_details_structure
 
-        file = open(path, "a")
+        file = open(path, "x")
 
         lines = []
 
@@ -31,7 +31,7 @@ class ExportStudentsAttendance:
     def txt(path, list):
         student_details_structure = ExportStudentsAttendance.student_details_structure
 
-        file = open(path, "a")
+        file = open(path, "x")
 
         lines = []
 

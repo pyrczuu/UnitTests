@@ -31,7 +31,7 @@ class ExportStudentsAttendance:
     def txt(path, list):
         student_details_structure = ExportStudentsAttendance.student_details_structure
 
-        file = open(path, "x")
+        file = open(path, "w")
 
         lines = []
 
@@ -50,8 +50,11 @@ class ExportStudentsAttendance:
 
                 if student_detail_key == "Surname":
                     line.append(" - ")
+                elif student_detail_key == "ID":
+                    line.append("\n")
                 else:
                     line.append(" ")
+
 
             line.pop()
 

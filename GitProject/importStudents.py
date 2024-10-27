@@ -1,11 +1,6 @@
 class ImportStudents:
-    student_details_structure = ["Name", "Surname", "ID"]
-
     @staticmethod
-    def csv(path):
-
-        student_details_structure = ImportStudents.student_details_structure
-
+    def csv(path, student_details_structure):
         students = []
 
         file = open(path, "r")
@@ -25,10 +20,7 @@ class ImportStudents:
         return students
 
     @staticmethod
-    def txt(path):
-
-        student_details_structure = ImportStudents.student_details_structure
-
+    def txt(path, student_details_structure):
         students = []
 
         file = open(path, "r")

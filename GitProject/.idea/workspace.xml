@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21077a15-d430-4bad-868a-453cfe5bb03f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exportStudentsAttendance.py" beforeDir="false" afterPath="$PROJECT_DIR$/exportStudentsAttendance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/student_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lists/student_list.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addStudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/addStudent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "addStudent",
+    "git-widget-placeholder": "studentAddContinue",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,6 +101,7 @@
       <workItem from="1729952972818" duration="83000" />
       <workItem from="1729967874039" duration="6895000" />
       <workItem from="1729975422263" duration="766000" />
+      <workItem from="1730135778709" duration="773000" />
     </task>
     <servers />
   </component>

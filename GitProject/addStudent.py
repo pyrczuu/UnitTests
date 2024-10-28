@@ -28,6 +28,23 @@ class ModifyStudents:
             file.write(";".join(student))
             file2.write(student[0] + " " + student[1] + " - " + student[2])
 
+    @staticmethod
+    def modify_student(path, path2, students):
+        student_id = input("Enter student's ID to modify: ")
+        for student in students:
+            if student["ID"] == student_id:
+                name = input("Enter new student's name: ")
+                surname = input("Enter new student's surname: ")
+                student["Name"] = name
+                student["Surname"] = surname
+                ExportStudents.csv(path, students)
+                ExportStudents.txt(path2, students)
+                return
+        print("Student not found.")
+
+
+
+
 
 
 

@@ -22,4 +22,6 @@ for student in lista2:
 #    print(student.get("Name"), student.get("Surname"), student.get("ID"))
 
 #ModifyStudents.add_student_by_overwriting(path, path2)
-ModifyStudents.modify_student(path, path2, lista)
+#ModifyStudents.modify_student(path, path2, lista)
+
+ModifyStudents.delete_student(path, path2, lista)

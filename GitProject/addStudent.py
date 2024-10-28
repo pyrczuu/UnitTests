@@ -43,6 +43,18 @@ class ModifyStudents:
         print("Student not found.")
 
 
+    @staticmethod
+    def delete_student(path, path2, students):
+          student_id = input("Enter student's ID to delete: ")
+          for i in range(len(students)):
+              if students[i]["ID"] == student_id:
+                  del students[i]
+                  ExportStudents.csv(path, students)
+                  ExportStudents.txt(path2, students)
+                  return
+          print("Student not found.")
+
+
 
 
 

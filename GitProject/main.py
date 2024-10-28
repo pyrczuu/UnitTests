@@ -1,22 +1,24 @@
 from importStudents import ImportStudents
 from addStudent import ModifyStudents
 
-path = "lists/student_list.csv"
-path2 = "lists/student_list.txt"
+path = "lists/student_list_cp2.csv"
+path2 = "lists/student_list_cp2.txt"
 
-lista = ImportStudents.csv(path, ["Name", "Surname", "ID"])
+#lista = ImportStudents.csv(path, ["Name", "Surname", "ID"])
 '''
 for student in lista:
     print(student.get("Name"), student.get("Surname"), student.get("ID"))
 
 '''
-lista2 = ImportStudents.txt(path2, ["Name", "Surname", "ID"])
+#lista2 = ImportStudents.txt(path2, ["Name", "Surname", "ID"])
 '''
 for student in lista2:
     print(student.get("Name"), student.get("Surname"), student.get("ID"))
 '''
 
-ModifyStudents.add_student_and_export(path, path2, lista)
+#ModifyStudents.add_student_and_export(path, path2, lista)
 
 #for student in lista:
 #    print(student.get("Name"), student.get("Surname"), student.get("ID"))
+
+ModifyStudents.add_student_by_overwriting(path, path2)

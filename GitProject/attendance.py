@@ -1,4 +1,5 @@
 ﻿from importStudents import ImportStudents
+import os
 
 class Attendance:
     def __init__(self):
@@ -45,9 +46,12 @@ if __name__ == "__main__":
     attendance = Attendance()
     students = []
 
-    # File paths
-    file_path_csv = r"C:\Users\leon0\Desktop\SON2update\SON_ZAD2\GitProject\lists\student_list.csv"
-    file_path_txt = r"C:\Users\leon0\Desktop\SON2update\SON_ZAD2\GitProject\lists\student_list.txt"
+    # Main project directory path
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Dynamic paths
+    file_path_csv = os.path.join(base_dir, "lists", "student_list.csv")
+    file_path_txt = os.path.join(base_dir, "lists", "student_list.txt")
 
     # Checking if the file exists
     try:
@@ -82,3 +86,4 @@ if __name__ == "__main__":
             break
         else:
             print("Please try again.\n")
+

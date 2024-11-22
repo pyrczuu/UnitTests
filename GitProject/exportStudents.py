@@ -5,7 +5,7 @@ class ExportStudents:
 
         lines = []
 
-        for i in range(1, len(list)):
+        for i in range(len(list)):
             student_details = list[i]
             line = []
 
@@ -27,7 +27,7 @@ class ExportStudents:
 
         lines = []
 
-        for i in range(1, len(list)):
+        for i in range(len(list)):
             student_details = list[i]
 
             line = []

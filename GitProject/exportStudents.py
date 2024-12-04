@@ -1,53 +1,17 @@
+from GitProject.student_class import Student
+
+
 class ExportStudents:
     @staticmethod
-    def csv(path, list):
-        file = open(path, "w")
-
-        lines = []
-
-        for i in range(len(list)):
-            student_details = list[i]
-            line = []
-
-            for student_detail_key in student_details:
-                line.append(student_details[student_detail_key])
-
-            line = ";".join(line)
-
-            if i < len(list) - 1:
-                line += "\n"
-
-            lines.append(line)
-
-        file.writelines(lines)
+    def csv(path_to_save: str, student_list: list):
+        file = open(path_to_save, "w")
+        for student in student_list:
+            file.write(f"{student.name};{student.surname};{student.id}\n")
+        file.close()
 
     @staticmethod
-    def txt(path, list):
-        file = open(path, "w")
-
-        lines = []
-
-        for i in range(len(list)):
-            student_details = list[i]
-
-            line = []
-
-            for student_detail_key in student_details:
-                line.append(student_details[student_detail_key])
-
-                if student_detail_key == "Surname":
-                    line.append(" - ")
-                else:
-                    line.append(" ")
-
-
-            line.pop()
-
-            line = "".join(line)
-
-            if i < len(list) - 1:
-                line += "\n"
-
-            lines.append(line)
-
-        file.writelines(lines)
+    def txt(path_to_save: str, student_list: list):
+        file = open(path_to_save, "w")
+        for student in student_list:
+            file.write(f"{student.name} {student.surname} - {student.id}\n")
+        file.close()

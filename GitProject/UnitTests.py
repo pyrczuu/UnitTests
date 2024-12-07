@@ -12,6 +12,9 @@ Lukasz = Student("Lukasz","Radecki","HS3N96N0O","-")
 
 student_list = [Damian, Marcel, Leon, Mikolaj, Lukasz]
 
-students = []
-path = "lists/student_list.csv"
+path = "test_files/delete_student.csv"
+path1 = "delete_student.txt"
+
+ModifyStudents.delete_student(path,path1,student_list)
+
 

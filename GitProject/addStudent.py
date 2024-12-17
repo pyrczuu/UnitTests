@@ -32,7 +32,7 @@ class ModifyStudents:
           student_id = input("Enter student's ID to delete: ")
           for student in students:
               if student.id == student_id:
-                  del student
+                  students.remove(student)
                   ExportStudents.csv(path, students)
                   ExportStudents.txt(path2, students)
                   return

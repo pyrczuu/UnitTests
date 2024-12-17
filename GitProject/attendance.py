@@ -1,4 +1,5 @@
-﻿from importStudents import ImportStudents
+﻿from GitProject.student_class import Student
+from importStudents import ImportStudents
 import os
 
 class Attendance:
@@ -11,10 +12,10 @@ class Attendance:
             self.presence[date] = {}
 
         for student in students:
-            student_name = f"{student['Name']} {student['Surname']}"
-            present = input(f"Is {student_name} present? (1/0): ") == "1"
-            self.presence[date][student_name] = present
-            print(f"Attendance for student {student_name} on {date} has been updated to {'present' if present else 'absent'}.\n")
+            student_fullname = f"{student.name} {student.surname}"
+            present = input(f"Is {student_fullname} present? (1/0): ") == "1"
+            self.presence[date][student] = present
+            print(f"Attendance for student {student_fullname} on {date} has been updated to {'present' if present else 'absent'}.\n")
 
     # Displays the attendance list for students
     def download_attendance(self, date):
@@ -23,7 +24,7 @@ class Attendance:
             return
         print(f"Attendance for {date}:")
         for student, present in self.presence[date].items():
-            print(f"{student}: {'present' if present else 'absent'}")
+            print(f"{student.name} {student.surname}: {'present' if present else 'absent'}")
 
     # Clearing attendance data
     def clear_attendance(self, date):
@@ -34,13 +35,13 @@ class Attendance:
             print(f"No attendance data for {date}.")
 
     # Modifies the attendance of students for a specific date
-    def modify_attendance(self, date, student_name):
-        if date not in self.presence or student_name not in self.presence[date]:
-            print(f"No attendance data found for {student_name} on {date}.")
+    def modify_attendance(self, date, student: Student):
+        if date not in self.presence or student not in self.presence[date]:
+            print(f"No attendance data found for {student.name} {student.surname} on {date}.")
             return
-        present = input(f"Is {student_name} present? (1/0): ") == "1"
-        self.presence[date][student_name] = present
-        print(f"Attendance for student {student_name} on {date} has been updated to {'present' if present else 'absent'}.")
+        present = input(f"Is {student.name} {student.surname} present? (1/0): ") == "1"
+        self.presence[date][student] = present
+        print(f"Attendance for student {student.name} {student.surname} on {date} has been updated to {'present' if present else 'absent'}.")
 
 if __name__ == "__main__":
     attendance = Attendance()

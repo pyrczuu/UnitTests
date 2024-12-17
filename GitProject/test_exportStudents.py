@@ -1,12 +1,7 @@
 import unittest
-from tracemalloc import get_object_traceback
 
-import pytest
-import addStudent
 import exportStudents
 import importStudents
-from GitProject.UnitTests import students
-from GitProject.addStudent import ModifyStudents
 from GitProject.exportStudents import ExportStudents
 from GitProject.main import path2
 from GitProject.student_class import Student
@@ -28,16 +23,16 @@ class Test:
         #when
         got = importStudents.ImportStudents.csv(path,[])
         #then
-        assert type(got) == list
-        assert type(got[0]) == Student
+        assert got is list
+        assert isinstance((got[0]),Student)
     def test_importStudentsTXT(self):
         #given
         path = "lists/student_list.txt"
         #when
         got = importStudents.ImportStudents.txt(path, [])
         #then
-        assert type(got) == list
-        assert type(got[0]) == Student
+        assert got is list
+        assert isinstance((got[0]),Student)
     def test_exportStudentsCSV(self):
         #given
         save_path = "test_exportedCSV.csv"

@@ -1,6 +1,5 @@
 from exportStudents import ExportStudents
 from student_class import Student
-import os
 
 class ModifyStudents:
     # method to add student to list and export it to csv and txt files, files are deleted after operation and new list overwrite file

@@ -1,5 +1,4 @@
 from importStudents import ImportStudents
-from addStudent import ModifyStudents
 
 path = "lists/student_list.csv"
 path2 = "lists/student_list.txt"

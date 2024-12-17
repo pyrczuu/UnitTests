@@ -1,4 +1,3 @@
-from GitProject.student_class import Student
 
 
 class ExportStudents:

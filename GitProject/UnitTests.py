@@ -1,8 +1,4 @@
-from importStudents import ImportStudents
 from GitProject.student_class import Student
-from importStudents import ImportStudents
-from addStudent import ModifyStudents
-from exportStudents import ExportStudents
 
 Damian = Student("Damian","Pyrcz","123456789","-")
 Marcel = Student("Marcel","Ras","987654321","-")

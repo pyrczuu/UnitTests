@@ -1,5 +1,5 @@
 ﻿from GitProject.student_class import Student
-from importStudents import ImportStudents
+from GitProject.importStudents import ImportStudents
 import os
 
 class Attendance:

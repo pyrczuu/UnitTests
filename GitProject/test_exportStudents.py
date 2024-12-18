@@ -39,7 +39,7 @@ class Test:
         w = open(content_path,"r")
         want = w.read()
         #when
-        exportStudents.ExportStudents.csv(save_path, student_list)
+        ExportStudents.csv(save_path, student_list)
         g = open(save_path, "r")
         got = g.read()
         #then
@@ -53,7 +53,7 @@ class Test:
         w = open(content_path,"r")
         want = w.read()
         # when
-        exportStudents.ExportStudents.txt(save_path, student_list)
+        ExportStudents.txt(save_path, student_list)
         g = open(save_path, "r")
         got = g.read()
         # then

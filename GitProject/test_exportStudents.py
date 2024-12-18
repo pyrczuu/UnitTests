@@ -21,7 +21,7 @@ class Test:
         #when
         got = importStudents.ImportStudents.csv(path,[])
         #then
-        assert got is list
+        assert isinstance(got, list)
         assert isinstance((got[0]),Student)
     def test_importStudentsTXT(self):
         #given
@@ -29,7 +29,7 @@ class Test:
         #when
         got = importStudents.ImportStudents.txt(path, [])
         #then
-        assert got is list
+        assert isinstance(got, list)
         assert isinstance((got[0]),Student)
     def test_exportStudentsCSV(self):
         #given

@@ -33,7 +33,9 @@ jobs:
           pip install pytest pytest-cov  # Ensure test dependencies are installed
       - name: "Run tests with coverage"
         run: |
-          pytest -vv --cov=src GitProject/
+          export PYTHONPATH=$PYTHONPATH:$(pwd)  # Dodaj katalog główny do PYTHONPATH
+          pytest -vv --cov=GitProject/ GitProject/
+
   
   lint:
     runs-on: "ubuntu-latest"

@@ -24,7 +24,7 @@ def Mock_add_student_and_export(path, path2, students, inputname, inputsurname, 
 class Test:
     def test_importStudentsCSV(self):
         #given
-        path = "lists/student_list.csv"
+        path = "GitProject/lists/student_list.csv"
         #when
         got = ImportStudents.csv(path,[])
         #then
@@ -32,7 +32,7 @@ class Test:
         assert isinstance((got[0]),Student)
     def test_importStudentsTXT(self):
         #given
-        path = "lists/student_list.txt"
+        path = "GitProject/lists/student_list.txt"
         #when
         got = ImportStudents.txt(path, [])
         #then
@@ -41,7 +41,7 @@ class Test:
     def test_exportStudentsCSV(self):
         #given
         save_path = "test_exportedCSV.csv"
-        content_path = "lists/student_list.csv"
+        content_path = "GitProject/lists/student_list.csv"
         student_list = ImportStudents.csv(content_path,[])
         w = open(content_path,"r")
         want = w.read()
@@ -55,7 +55,7 @@ class Test:
     def test_exportStudentsTXT(self):
         # given
         save_path = "test_exportedTXT.txt"
-        content_path = "lists/student_list.txt"
+        content_path = "GitProject/lists/student_list.txt"
         student_list = importStudents.ImportStudents.txt(content_path,[])
         w = open(content_path,"r")
         want = w.read()

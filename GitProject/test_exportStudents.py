@@ -1,7 +1,6 @@
 import unittest
 
-import exportStudents
-import importStudents
+from GitProject import importStudents
 from GitProject.exportStudents import ExportStudents
 from GitProject.main import path2
 from GitProject.student_class import Student

@@ -1,7 +1,4 @@
 import unittest
-from tkinter.font import names
-from tracemalloc import get_object_traceback
-
 from GitProject import importStudents
 from GitProject.exportStudents import ExportStudents
 from GitProject.importStudents import ImportStudents

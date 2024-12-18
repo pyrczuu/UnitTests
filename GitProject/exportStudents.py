@@ -1,5 +1,3 @@
-
-
 class ExportStudents:
     @staticmethod
     def csv(path_to_save: str, student_list: list):

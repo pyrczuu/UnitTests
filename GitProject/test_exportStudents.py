@@ -2,7 +2,6 @@ import unittest
 
 from GitProject import importStudents
 from GitProject.exportStudents import ExportStudents
-from GitProject.main import path2
 from GitProject.student_class import Student
 
 def Mock_modify_student(path,path1,students,id,inputname,inputsurname):
@@ -18,7 +17,7 @@ def Mock_modify_student(path,path1,students,id,inputname,inputsurname):
 class Test:
     def test_importStudentsCSV(self):
         #given
-        path = "lists/student_list.csv"
+        path = "GitProject/lists/student_list.csv"
         #when
         got = importStudents.ImportStudents.csv(path,[])
         #then
@@ -26,7 +25,7 @@ class Test:
         assert isinstance((got[0]),Student)
     def test_importStudentsTXT(self):
         #given
-        path = "lists/student_list.txt"
+        path = "GitProject/lists/student_list.txt"
         #when
         got = importStudents.ImportStudents.txt(path, [])
         #then
@@ -35,7 +34,7 @@ class Test:
     def test_exportStudentsCSV(self):
         #given
         save_path = "test_exportedCSV.csv"
-        content_path = "lists/student_list.csv"
+        content_path = "GitProject/lists/student_list.csv"
         student_list = importStudents.ImportStudents.csv(content_path,[])
         w = open(content_path,"r")
         want = w.read()
@@ -49,7 +48,7 @@ class Test:
     def test_exportStudentsTXT(self):
         # given
         save_path = "test_exportedTXT.txt"
-        content_path = "lists/student_list.txt"
+        content_path = "GitProject/lists/student_list.txt"
         student_list = importStudents.ImportStudents.txt(content_path,[])
         w = open(content_path,"r")
         want = w.read()

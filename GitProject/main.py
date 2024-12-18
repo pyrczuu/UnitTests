@@ -1,4 +1,4 @@
-from importStudents import ImportStudents
+from GitProject.importStudents import ImportStudents
 
 path = "lists/student_list.csv"
 path2 = "lists/student_list.txt"

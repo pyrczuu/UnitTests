@@ -10,7 +10,7 @@ def Mock_modify_student(path,path1,students,id,inputname,inputsurname):
             student.name = inputname
             student.surname = inputsurname
             ExportStudents.csv(path, students)
-            ExportStudents.txt(path2, students)
+            ExportStudents.txt(path1, students)
             return
     print("Student not found.")
 

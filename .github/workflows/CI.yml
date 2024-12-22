@@ -2,11 +2,7 @@ name: Unit tests, lint, TODO
 
 on:
   push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
 
 permissions: read-all
 

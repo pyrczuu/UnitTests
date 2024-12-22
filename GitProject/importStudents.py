@@ -16,10 +16,8 @@ class ImportStudents:
     def txt(path: str, students: list) -> list:
         file = open(path, "r")
         for line in file:
-            temp_person = line.strip().split(" - ")
-            person = temp_person[0].split()
-            id_value = temp_person[1]
-            students.append(Student(person[0], person[1], id_value, "-"))
+            person = line.strip().split(";")
+            students.append(Student(person[0], person[1], person[2], "-"))
         file.close()
         return students
 

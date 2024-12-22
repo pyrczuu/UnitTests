@@ -1,7 +1,5 @@
-﻿from operator import attrgetter
+﻿from GitProject.src.student_class import Student
 
-from GitProject.student_class import Student
-from GitProject.importStudents import ImportStudents
 
 class Attendance:
     @staticmethod

@@ -1,8 +1,8 @@
 import unittest
-from GitProject import importStudents
-from GitProject.exportStudents import ExportStudents
-from GitProject.importStudents import ImportStudents
-from GitProject.student_class import Student
+from GitProject.src import importStudents
+from GitProject.src.exportStudents import ExportStudents
+from GitProject.src.importStudents import ImportStudents
+from GitProject.src.student_class import Student
 
 def Mock_modify_student(path,path1,students,id,inputname,inputsurname):
     for student in students:
@@ -53,7 +53,7 @@ class Test:
         # given
         save_path = "test_exportedTXT.txt"
         content_path = "GitProject/lists/student_list.txt"
-        student_list = importStudents.ImportStudents.txt(content_path,[])
+        student_list = importStudents.ImportStudents.txt(content_path, [])
         w = open(content_path,"r")
         want = w.read()
         # when

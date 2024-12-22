@@ -1,4 +1,3 @@
-from GitProject import *
 from addStudent import ModifyStudents
 from exportStudents import ExportStudents
 from importStudents import ImportStudents
@@ -18,7 +17,7 @@ while running:
     match chosen:
         case "1":
             students = []
-            print("Inserted data will be exported, please type in file names for: ")       #TODO: needs to be more user friendly and handle exceptions 
+            print("Inserted data will be exported, please type in file names for: ")       #TODO:  needs to be more user friendly and handle exceptions
             path1 = "lists/" + input("CSV: ")
             path2 = "lists/" + input("TXT: ")
             ModifyStudents.add_student_and_export(path1, path2, students)

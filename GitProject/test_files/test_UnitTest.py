@@ -65,7 +65,7 @@ class Test:
     def test_modify_student(self):
         #given
         path = "test_add_student_and_export.csv"
-        path1 = "test_files/test_add_student_and_export.txt"
+        path1 = "GitProject/test_files/test_add_student_and_export.txt"
         Andrzej = Student("Andrzej", "Hasiok", "HAGIE93LC", "-")
         Grzegorz = Student("Grzegorz", "Bonk", "761HSO405", "-")
         Krzysztof = Student("Krzysztof", "Loczek", "76131H405", "-")
@@ -79,7 +79,7 @@ class Test:
     def test_add_student_and_export(self):
         #given
         path = "test_add_student_and_export.csv"
-        path1 = "test_files/test_add_student_and_export.txt"
+        path1 = "GitProject/test_files/test_add_student_and_export.txt"
         students = []
         name = "Damian"
         surname = "Pyrcz"

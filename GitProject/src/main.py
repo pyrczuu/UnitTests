@@ -4,7 +4,7 @@ from importStudents import ImportStudents
 from attendance import Attendance
 
 running = True
-while running:                      #TODO: improve the MENU, add option to go back or do something in loop
+while running:              #TODO:  improve the MENU, add option to go back or do something in loop
     print(21*" ", "MENU")
     print(50*"-")
     print("[1] - add student")
@@ -23,13 +23,13 @@ while running:                      #TODO: improve the MENU, add option to go ba
             ModifyStudents.add_student_and_export(path1, path2, students)
         case "2":
             students = []
-            print("Inserted data will be exported, please type in file names for: ")    #TODO: test  
+            print("Inserted data will be exported, please type in file names for: ")    #TODO:  test
             path1 = "lists/" + input("CSV: ")
             path2 = "lists/" + input("TXT: ")
             ModifyStudents.modify_student(path1, path2, students)
         case "3":
             students = []
-            print("Inserted data will be exported, please type in file names for: ")    #TODO: test
+            print("Inserted data will be exported, please type in file names for: ")    #TODO:  test
             path1 = "lists/" + input("CSV: ")
             path2 = "lists/" + input("TXT: ")
             ModifyStudents.delete_student(path1, path2, students)
@@ -49,7 +49,7 @@ while running:                      #TODO: improve the MENU, add option to go ba
                 ExportStudents.txt(path, students)
         case "5":
             students = []
-            path = input("Where is your list stored? ")        # TODO:  test
+            path = input("Where is your list stored? ")        # TODO: test
             if path.endswith(".csv"):
                 students = ImportStudents.csv(path,students)
             elif path.endswith(".txt"):

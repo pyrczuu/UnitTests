@@ -1,4 +1,5 @@
 import unittest
+from GitProject import src
 from GitProject.src import importStudents
 from GitProject.src.exportStudents import ExportStudents
 from GitProject.src.importStudents import ImportStudents

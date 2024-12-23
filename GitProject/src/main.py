@@ -4,7 +4,7 @@ from importStudents import ImportStudents
 from attendance import Attendance
 
 running = True
-while running:
+while running:                      #TODO: improve the MENU, add option to go back or do something in loop
     print(21*" ", "MENU")
     print(50*"-")
     print("[1] - add student")

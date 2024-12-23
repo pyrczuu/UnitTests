@@ -23,13 +23,13 @@ while running:
             ModifyStudents.add_student_and_export(path1, path2, students)
         case "2":
             students = []
-            print("Inserted data will be exported, please type in file names for: ")    #TODO: test
+            print("Inserted data will be exported, please type in file names for: ")    #TODO: test  
             path1 = "lists/" + input("CSV: ")
             path2 = "lists/" + input("TXT: ")
             ModifyStudents.modify_student(path1, path2, students)
         case "3":
             students = []
-            print("Inserted data will be exported, please type in file names for: ")
+            print("Inserted data will be exported, please type in file names for: ")    #TODO: test
             path1 = "lists/" + input("CSV: ")
             path2 = "lists/" + input("TXT: ")
             ModifyStudents.delete_student(path1, path2, students)
@@ -49,7 +49,7 @@ while running:
                 ExportStudents.txt(path, students)
         case "5":
             students = []
-            path = input("Where is your list stored? ")        # TODO: test
+            path = input("Where is your list stored? ")        # TODO:  test
             if path.endswith(".csv"):
                 students = ImportStudents.csv(path,students)
             elif path.endswith(".txt"):
